@@ -7,7 +7,7 @@
 
 
 (defroutes route
-  (GET "/" _ "okk commit EEEEE"))
+  (GET "/" _ "okk commit"))
 
 (def server
   (run-jetty #'route {:port 8081 :join? false}))
