@@ -1,0 +1,7 @@
+FROM clojure
+
+RUN apt-get update && apt-get install -y git
+RUN git clone https://github.com/Me1hi0r/docker-app && cd docker-app
+WORKDIR ./docker-app
+EXPOSE 8081
+CMD lein run
